@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.footer {
+  background-color: $black;
+  height: rem(60);
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include mq("md") {
+    height: rem(79);
+  }
+}
+
+.footer_copyright {
+  font-size: rem(14);
+  font-weight: $regular;
+  line-height: calc(30 / 14);
+  letter-spacing: 0.0357em;
+}

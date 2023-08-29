@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.news {
+}
+
+.news__container {
+  margin-top: rem(150);
+  max-width: rem(1030);
+  width: 100%;
+  margin-inline: auto;
+}
+
+.news__heading {
+  text-align: center;
+}
+
+.news__cards {
+  margin-top: rem(70);
+  padding-right: rem(12.5);
+  padding-left: rem(12.5);
+  @include mq("md") {
+    padding-right: initial;
+    padding-left: initial;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: rem(34);
+  }
+}

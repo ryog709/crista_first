@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.news-card {
+  box-shadow: 0 0 5px 0 rgba(27, 19, 16, 0.24);
+}
+
+.news__card + .news__card {
+  margin-top: rem(50);
+  @include mq("md") {
+    margin-top: initial;
+  }
+}
+
+.news-card__image img {
+  aspect-ratio: 320/200;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.news-card__box {
+  padding: rem(25) rem(33);
+}
+
+.news-card__text {
+  font-size: rem(13);
+  font-weight: $bold;
+  line-height: calc(25 / 13);
+  letter-spacing: 0.0384em;
+}

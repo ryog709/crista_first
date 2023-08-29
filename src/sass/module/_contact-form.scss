@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.contact-form {
+}
+
+.contact-form__button {
+  text-align: center;
+}
+
+.contact-form__dl + .contact-form__dl {
+  margin-top: rem(25);
+}
+
+.contact-form__label label {
+  font-weight: $regular;
+}
+
+.contact-form__button {
+  margin-top: rem(50);
+}

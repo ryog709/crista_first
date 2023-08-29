@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.mv {
+  background-image: url("../images/common/mv-sp.webp");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  @include mq("md") {
+    background-image: url("../images/common/mv-pc.webp");
+  }
+}
+
+.mv__inner {
+  height: inherit;
+}
+
+.mv__text-box {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mv__text {
+  color: $white;
+  font-size: rem(30);
+  font-weight: $medium;
+  letter-spacing: 0.01666em;
+  padding: rem(30) rem(40);
+  border: rem(2) solid $white;
+  @include mq("md") {
+    font-size: rem(50);
+    padding: rem(35) rem(42);
+  }
+}
