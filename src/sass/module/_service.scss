@@ -9,8 +9,7 @@
   margin-inline: auto;
 }
 
-.service__heading {
-  margin-top: rem(150);
+.service__title {
   text-align: center;
 }
 
@@ -24,12 +23,17 @@
 .service__item {
   @include mq("md") {
     display: flex;
-    flex-direction: row-reverse;
     gap: rem(70);
   }
 }
 
-.service__item2 {
+.service__item:nth-of-type(odd) {
+  @include mq("md") {
+    flex-direction: row-reverse;
+  }
+}
+
+.service__item {
   margin-top: rem(55);
   @include mq("md") {
     display: flex;
@@ -37,19 +41,9 @@
   }
 }
 
-.service__box {
+.service__content {
   @include mq("md") {
     width: calc(480 / 1030) * 100%;
-  }
-}
-
-.service__title {
-  font-size: rem(20);
-  line-height: calc(40 / 20);
-  font-weight: $bold;
-  letter-spacing: 0.05em;
-  @include mq("md") {
-    font-size: rem(24);
   }
 }
 

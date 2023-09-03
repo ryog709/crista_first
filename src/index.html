@@ -33,29 +33,23 @@
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header header-layout">
       <div class="header__inner inner">
         <h1 class="header__title">
-          <img
-            src="./assets/images/common/site-logo.webp"
-            alt="ロゴ画像"
-            width="120"
-            height="24"
-            loading="lazy"
-          />
+          <img src="./assets/images/common/site-logo.webp" alt="クリスタ" width="120" height="24" />
         </h1>
-        <nav class="header_nav u-desktop">
-          <ul class="header_nav-items">
-            <li class="header_nav-item">
+        <nav class="header__nav header-nav u-desktop">
+          <ul class="header-nav__items">
+            <li class="header-nav__item">
               <a href="#about">about</a>
             </li>
-            <li class="header_nav-item">
+            <li class="header-nav__item">
               <a href="#service">service</a>
             </li>
-            <li class="header_nav-item">
+            <li class="header-nav__item">
               <a href="#news">news</a>
             </li>
-            <li class="header_nav-item">
+            <li class="header-nav__item">
               <a href="#contact">contact</a>
             </li>
           </ul>
@@ -63,14 +57,14 @@
       </div>
 
       <!-- ハンバーガーメニュー -->
-      <div class="hamburger js-hamburger u-mobile">
+      <div class="header__hamburger hamburger js-hamburger u-mobile">
         <span></span>
         <span></span>
         <span></span>
       </div>
 
       <!-- ドロワーメニュー -->
-      <div class="drawer-menu js-drawer u-mobile">
+      <div class="header__drawer-menu drawer-menu js-drawer u-mobile">
         <ul class="drawer-menu__items">
           <li class="drawer-menu__item">
             <a href="#" class="drawer-menu__link">about</a>
@@ -87,20 +81,21 @@
         </ul>
       </div>
     </header>
+
     <main>
-      <section class="mv">
-        <div class="mv__inner inner">
-          <div class="mv__text-box"><p class="mv__text">Cresta&nbsp;Design</p></div>
+      <section class="mv mv-layout">
+        <div class="mv__inner">
+          <h2 class="mv__text">cresta&nbsp;design</h2>
         </div>
       </section>
 
       <!-- about -->
-      <section class="about">
+      <section class="about about__layout">
         <div class="about__inner inner">
-          <h2 class="about__heading section-heading">about</h2>
+          <h3 class="about__title section-title">about</h3>
 
           <div class="about__box">
-            <p class="about__title">ミニマルで<br />洗練されたデザインを。</p>
+            <h4 class="about__subTitle section-subTitle">ミニマルで<br />洗練されたデザインを。</h4>
             <p class="about__text">
               近年、ミニマルなデザインが流行しています。そこで弊社では、クライアント企業様新規サービス等の課題に対してミニマルで洗練されたデザインを実現させることで解決のサポートを致します。もちろん全てのサービスにおいてミニマルなデザインが課題解決になるわけではないので、課題や今後のサービスの展開等しっかりとヒアリングを行なった上でご提案させて頂きます。
             </p>
@@ -109,16 +104,16 @@
       </section>
 
       <!-- service -->
-      <section class="service">
+      <section class="service service-layout">
         <div class="service__inner inner">
           <div class="service__container">
-            <h2 class="service__heading section-heading">service</h2>
-            <div class="service__items">
-              <div class="service__item">
-                <div class="service__box">
-                  <p class="service__title">
+            <h3 class="service__title section-title">service</h3>
+            <ul class="service__items">
+              <li class="service__item">
+                <div class="service__content">
+                  <h4 class="service__subTitle section-subTitle">
                     リリース時のサポートで<br />サービスのブランディングを
-                  </p>
+                  </h4>
                   <p class="service__text">
                     弊社では、リリース時もサポートさせて頂きます。プレスリリース用のサイトや動画制作を通して、サービスのブランディングを行わせて頂きます。
                   </p>
@@ -132,10 +127,12 @@
                     loading="lazy"
                   />
                 </div>
-              </div>
-              <div class="service__item2">
-                <div class="service__box">
-                  <p class="service__title">リリース後のサポートで<br />効果を最大化させる</p>
+              </li>
+              <li class="service__item">
+                <div class="service__content">
+                  <h4 class="service__subTitle section-subTitle">
+                    リリース後のサポートで<br />効果を最大化させる
+                  </h4>
                   <p class="service__text">
                     弊社では、リリース後もサポートさせて頂きます。サービスはリリース後に様々な課題にぶつかります。そこでクライアント様と一緒に改善を行うことで、デザインの効果を最大化させます。
                   </p>
@@ -149,16 +146,17 @@
                     loading="lazy"
                   />
                 </div>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
+
       <!-- news -->
-      <section class="news">
+      <section class="news news-layout">
         <div class="news__inner inner">
           <div class="news__container">
-            <h2 class="news__heading section-heading">news</h2>
+            <h3 class="news__title section-title">news</h3>
 
             <div class="news__cards">
               <div class="news__card news-card">
@@ -215,9 +213,9 @@
       </section>
 
       <!-- contact -->
-      <section class="contact">
+      <section class="contact contact-layout">
         <div class="contact__inner inner">
-          <h3 class="contact__heading contact-heading">お問い合わせ</h3>
+          <h3 class="contact__title contact-heading">お問い合わせ</h3>
 
           <div class="contact__form">
             <form class="contact-form" action="#" method="post" id="">

@@ -1,8 +1,8 @@
 @use "global" as *;
 
-.section-heading {
-  font-size:  rem(36);
+.section-title {
+  font-size: rem(36);
   font-weight: $medium;
-  letter-spacing:  0.0138888em;
+  letter-spacing: 0.0138888em;
   text-transform: capitalize;
 }

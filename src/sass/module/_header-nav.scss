@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.header-nav {
+  height: inherit;
+
+  @include mq("md") {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.header-nav__items {
+  height: inherit;
+  @include mq("md") {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.header-nav__item {
+  height: inherit;
+  @include mq("md") {
+    margin-left: rem(55);
+  }
+}
+
+.header-nav__item a {
+  height: inherit;
+  @include mq("md") {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
