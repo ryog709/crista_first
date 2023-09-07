@@ -5,16 +5,14 @@
 
 .contact-form__button {
   text-align: center;
+  margin-top: rem(44);
 }
 
 .contact-form__dl + .contact-form__dl {
-  margin-top: rem(25);
+  margin-top: rem(17);
 }
 
 .contact-form__label label {
   font-weight: $regular;
-}
-
-.contact-form__button {
-  margin-top: rem(50);
+  line-height: 1;
 }

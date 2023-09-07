@@ -36,7 +36,14 @@
     <header class="header header-layout">
       <div class="header__inner inner">
         <h1 class="header__title">
-          <img src="./assets/images/common/site-logo.webp" alt="クリスタ" width="120" height="24" />
+          <a href="#">
+            <img
+              src="./assets/images/common/header-logo.svg"
+              alt="クリスタ"
+              width="120"
+              height="24"
+            />
+          </a>
         </h1>
         <nav class="header__nav header-nav u-desktop">
           <ul class="header-nav__items">
@@ -90,11 +97,11 @@
       </section>
 
       <!-- about -->
-      <section class="about about__layout">
+      <section class="about about-layout">
         <div class="about__inner inner">
           <h3 class="about__title section-title">about</h3>
 
-          <div class="about__box">
+          <div class="about__content">
             <h4 class="about__subTitle section-subTitle">ミニマルで<br />洗練されたデザインを。</h4>
             <p class="about__text">
               近年、ミニマルなデザインが流行しています。そこで弊社では、クライアント企業様新規サービス等の課題に対してミニマルで洗練されたデザインを実現させることで解決のサポートを致します。もちろん全てのサービスにおいてミニマルなデザインが課題解決になるわけではないので、課題や今後のサービスの展開等しっかりとヒアリングを行なった上でご提案させて頂きます。
@@ -157,57 +164,56 @@
         <div class="news__inner inner">
           <div class="news__container">
             <h3 class="news__title section-title">news</h3>
-
-            <div class="news__cards">
-              <div class="news__card news-card">
-                <div class="news-card__image">
-                  <img
-                    src="./assets/images/common/card-image1.webp"
-                    alt="パソコンとスマホの画像"
-                    width="320"
-                    height="200"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="news-card__box">
+            <ul class="news__items news-cards">
+              <li class="news-cards__item news-card">
+                <a href="">
+                  <div class="news-card__image">
+                    <img
+                      src="./assets/images/common/card-image1.webp"
+                      alt="MacBookとiPhoneと腕時計の写真"
+                      width="320"
+                      height="200"
+                      loading="lazy"
+                    />
+                  </div>
                   <p class="news-card__text">
                     新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
                   </p>
-                </div>
-              </div>
-              <div class="news__card news-card">
-                <div class="news-card__image">
-                  <img
-                    src="./assets/images/common/card-image2.webp"
-                    alt="パソコンとスマホの画像"
-                    width="320"
-                    height="200"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="news-card__box">
+                </a>
+              </li>
+              <li class="news-cards__item news-card">
+                <a href="">
+                  <div class="news-card__image">
+                    <img
+                      src="./assets/images/common/card-image2.webp"
+                      alt="iPhoneアプリが開いている写真"
+                      width="320"
+                      height="200"
+                      loading="lazy"
+                    />
+                  </div>
                   <p class="news-card__text">
                     新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
                   </p>
-                </div>
-              </div>
-              <div class="news__card news-card">
-                <div class="news-card__image">
-                  <img
-                    src="./assets/images/common/card-image3.webp"
-                    alt="パソコンとスマホの画像"
-                    width="320"
-                    height="200"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="news-card__box">
+                </a>
+              </li>
+              <li class="news-cards__item news-card">
+                <a href="">
+                  <div class="news-card__image">
+                    <img
+                      src="./assets/images/common/card-image3.webp"
+                      alt="MacBookが開いている写真"
+                      width="320"
+                      height="200"
+                      loading="lazy"
+                    />
+                  </div>
                   <p class="news-card__text">
                     新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
                   </p>
-                </div>
-              </div>
-            </div>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -216,47 +222,43 @@
       <section class="contact contact-layout">
         <div class="contact__inner inner">
           <h3 class="contact__title contact-heading">お問い合わせ</h3>
-
-          <div class="contact__form">
-            <form class="contact-form" action="#" method="post" id="">
-              <dl class="contact-form__dl">
-                <dt class="contact-form__label">
-                  <label for="name">担当者名</label>
-                </dt>
-                <dd class="contact-form__input">
-                  <input id="name" type="text" name="name" value="" />
-                </dd>
-              </dl>
-
-              <dl class="contact-form__dl">
-                <dt class="contact-form__label">
-                  <label for="name">電話番号</label>
-                </dt>
-                <dd class="contact-form__input">
-                  <input id="tell" type="text" name="tell" value="" />
-                </dd>
-              </dl>
-              <dl class="contact-form__dl">
-                <dt class="contact-form__label"><label for="name">メールアドレス</label></dt>
-                <dd class="contact-form__input">
-                  <input id="email" type="email" name="mail_address" value="" class="validate[]" />
-                </dd>
-              </dl>
-              <dl class="contact-form__dl">
-                <dt class="contact-form__label"><label for="name">お問い合わせ内容</label></dt>
-                <dd class="contact-form__input">
-                  <textarea id="contact" name="contact"></textarea>
-                </dd>
-              </dl>
-              <div class="contact-form__button">
-                <input type="submit" value="送信" />
-              </div>
-            </form>
-          </div>
+          <form class="contact__form contact-form" action="#" method="post" id="">
+            <dl class="contact-form__dl">
+              <dt class="contact-form__label">
+                <label for="name">担当者名</label>
+              </dt>
+              <dd class="contact-form__input">
+                <input id="name" type="text" name="name" value="" />
+              </dd>
+            </dl>
+            <dl class="contact-form__dl">
+              <dt class="contact-form__label">
+                <label for="tel">電話番号</label>
+              </dt>
+              <dd class="contact-form__input">
+                <input id="tel" type="tel" name="tel" value="" />
+              </dd>
+            </dl>
+            <dl class="contact-form__dl">
+              <dt class="contact-form__label"><label for="email">メールアドレス</label></dt>
+              <dd class="contact-form__input">
+                <input id="email" type="email" name="email" />
+              </dd>
+            </dl>
+            <dl class="contact-form__dl">
+              <dt class="contact-form__label"><label for="contact">お問い合わせ内容</label></dt>
+              <dd class="contact-form__input">
+                <textarea id="contact" name="contact"></textarea>
+              </dd>
+            </dl>
+            <div class="contact-form__button">
+              <input type="submit" value="送信" />
+            </div>
+          </form>
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer footer-layout">
       <small class="footer_copyright">&copy;crest.design all rights reserved</small>
     </footer>
   </body>

@@ -20,13 +20,6 @@
   }
 }
 
-.service__item {
-  @include mq("md") {
-    display: flex;
-    gap: rem(70);
-  }
-}
-
 .service__item:nth-of-type(odd) {
   @include mq("md") {
     flex-direction: row-reverse;
@@ -34,7 +27,7 @@
 }
 
 .service__item {
-  margin-top: rem(55);
+  margin-top: rem(44);
   @include mq("md") {
     display: flex;
     gap: rem(70);
@@ -47,12 +40,19 @@
   }
 }
 
+.service__subTitle {
+  margin-top: rem(18);
+}
+
 .service__text {
-  margin-top: rem(34);
+  margin-top: rem(12);
   font-size: rem(14);
   font-weight: $bold;
   line-height: calc(30 / 14);
-  letter-spacing: 0.0357em;
+  letter-spacing: 0.0457em;
+  @include mq("md") {
+    margin-top: rem(23);
+  }
 }
 
 .service__image {

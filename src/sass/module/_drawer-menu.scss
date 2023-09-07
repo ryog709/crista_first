@@ -1,24 +1,22 @@
 @use "global" as *;
 
-
 .drawer-menu {
-  position: absolute;
-  top:  0;
-  left: 0;
   width: 100%;
   height: 100vh;
   background-color: $black;
   pointer-events: auto;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  padding: rem(189) 0;
   display: none;
 }
 
-
-
-.drawer-menu__wrap {
-  display: flex;
-  overflow-x: hidden;
+.header__drawer-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
 }
-
 
 .drawer-menu__items {
   width: 100%;
@@ -26,23 +24,22 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
   font-size: rem(16);
-  line-height: calc(30 / 16);
+  line-height: 1;
   letter-spacing: 0.03125em;
   text-transform: capitalize;
 }
 
 .drawer-menu__item {
   display: inline-block;
-  padding: rem(20)  rem(15);
 }
 
 .drawer-menu__link {
   color: white;
+  padding: rem(30) rem(15);
   display: block;
 }
 
 .drawer-menu__link + .drawer-menu__link {
-  margin-top: rem(50);
+  // margin-top: rem(50);
 }

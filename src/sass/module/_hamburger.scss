@@ -1,50 +1,49 @@
 @use "global" as *;
 
 .hamburger {
-  position: fixed;
   z-index: 9999;
-  top: rem(20);
-  right: rem(16);
-  width: rem(22);
-  height: rem(20);
+  width: rem(25);
+  padding: rem(30);
+  height: inherit;
   cursor: pointer;
   color: white;
   transition: all 0.7s ease 0s;
 }
+.header__hamburger {
+  position: fixed;
+  top: rem(-2);
+  right: rem(0);
+}
 
 .hamburger span {
   position: absolute;
-  left: 0;
+  left: rem(20);
   display: inline-block;
-  width: 100%;
+  width: rem(25);
   height: rem(2);
   transition: transform 0.3s;
   background-color: white;
 }
 
 .hamburger.is-current {
-  right: 15px;
+  right: rem(0);
 }
 
 .hamburger span:nth-child(1) {
-  top: 0;
+  top: rem(26);
 }
 
 .hamburger span:nth-child(2) {
-  top: 8px;
+  top: rem(34);
   transition: opacity 0.3s;
 }
 
 .hamburger span:nth-child(3) {
-  top: 16px;
-}
-
-.hamburger.is-current {
-  // transform: translateX(rem(-200));
+  top: rem(42);
 }
 
 .hamburger.hamburger.is-current span:nth-child(1) {
-  top: 15px;
+  top: rem(34);
   transform: rotate(-45deg);
   background-color: white;
 }
@@ -54,7 +53,7 @@
 }
 
 .hamburger.hamburger.is-current span:nth-child(3) {
-  top: 15px;
+  top: rem(34);
   transform: rotate(45deg);
   background-color: white;
 }

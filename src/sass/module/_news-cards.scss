@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.news-cards {
+  padding-right: rem(12.5);
+  padding-left: rem(12.5);
+  @include mq("md") {
+    padding-right: initial;
+    padding-left: initial;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(34);
+  }
+}
+
+.news__items {
+  margin-top: rem(70);
+}

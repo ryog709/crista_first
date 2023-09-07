@@ -2,8 +2,15 @@
 
 .header {
   background-color: $black;
+  border-bottom: rem(2) solid #ffffff;
   height: rem(75);
   color: $white;
+}
+
+.header__inner.inner {
+  @include mq("md") {
+    padding-right: rem(5);
+  }
 }
 
 .header__inner {
@@ -13,9 +20,26 @@
   height: inherit;
 }
 
+.header__title {
+  height: inherit;
+}
+
+.header__title a {
+  display: block;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__title a:hover,
+.header-nav__item a:hover {
+  opacity: 0.7;
+  transition: all 0.3s ease 0s;
+}
+
 .header__title img {
+  height: inherit;
   width: rem(130);
   height: rem(25);
 }
-
-
