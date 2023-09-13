@@ -3,10 +3,13 @@
 .service {
 }
 
-.service__container {
+.service__inner.inner {
   max-width: rem(1030);
   width: 100%;
   margin-inline: auto;
+}
+
+.service__container {
 }
 
 .service__title {

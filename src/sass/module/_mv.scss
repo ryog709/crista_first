@@ -15,9 +15,11 @@
 
 .mv__inner {
   height: inherit;
+  min-height: inherit;
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .mv__text {

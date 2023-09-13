@@ -3,13 +3,15 @@
 .news {
 }
 
-.news__container {
+.news__inner.inner {
   max-width: rem(1030);
   width: 100%;
   margin-inline: auto;
 }
 
+.news__container {
+}
+
 .news__title {
   text-align: center;
 }
-
